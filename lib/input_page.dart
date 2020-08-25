@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 const activeCardColour = Color(0xFF1D1E33);
 const bottomContainerColour = Color(0xFFEB1555);
