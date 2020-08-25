@@ -45,14 +45,14 @@ class _InputPageState extends State<InputPage> {
               Expanded(
                 child: ReusableCard(colour: activeCardColour),
               ),
-              Container(
-                color: bottomContainerColour,
-                margin: EdgeInsets.only(top: 10.0),
-                width: double.infinity,
-                height: bottomContainerHeight,
-              ),
             ],
           )),
+          Container(
+            color: bottomContainerColour,
+            margin: EdgeInsets.only(top: 10.0),
+            width: double.infinity,
+            height: bottomContainerHeight,
+          ),
         ],
       ),
     );
