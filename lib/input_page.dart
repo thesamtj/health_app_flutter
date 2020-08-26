@@ -113,7 +113,40 @@ class _InputPageState extends State<InputPage> {
               child: Row(
             children: <Widget>[
               Expanded(
-                child: ReusableCard(colour: kActiveCardColour),
+                child: ReusableCard(
+                  colour: kActiveCardColour,
+                  cardChild: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        'WEIGHT',
+                        style: kLabelTextStyle,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          FloatingActionButton(
+                            backgroundColor: Color(0xFF4C4F5E),
+                            child: Icon(
+                              Icons.add,
+                              color: Colors.white,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 10.0,
+                          ),
+                          FloatingActionButton(
+                            backgroundColor: Color(0xFF4C4F5E),
+                            child: Icon(
+                              Icons.add,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
               ),
               Expanded(
                 child: ReusableCard(colour: kActiveCardColour),
@@ -129,5 +162,12 @@ class _InputPageState extends State<InputPage> {
         ],
       ),
     );
+  }
+}
+
+class RoundIconButton extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
