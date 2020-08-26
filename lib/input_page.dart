@@ -163,11 +163,11 @@ class _InputPageState extends State<InputPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Text(
-                        'WEIGHT',
+                        'AGE',
                         style: kLabelTextStyle,
                       ),
                       Text(
-                        weight.toString(),
+                        age.toString(),
                         style: kNumberStyle,
                       ),
                       Row(
@@ -177,7 +177,7 @@ class _InputPageState extends State<InputPage> {
                             icon: FontAwesomeIcons.plus,
                             onPressed: () {
                               setState(() {
-                                weight++;
+                                age++;
                               });
                             },
                           ),
@@ -188,7 +188,7 @@ class _InputPageState extends State<InputPage> {
                             icon: FontAwesomeIcons.minus,
                             onPressed: () {
                               setState(() {
-                                weight--;
+                                age--;
                               });
                             },
                           ),
@@ -224,7 +224,7 @@ class RoundIconButton extends StatelessWidget {
       child: Icon(icon),
       onPressed: onPressed,
       elevation: 0.0,
-      constraints: BoxConstraints.tightFor(width: 56.0, height: 56.0),
+      constraints: BoxConstraints.tightFor(width: 50.0, height: 50.0),
       shape: CircleBorder(),
       fillColor: Color(0xFF4C4F5E),
     );
