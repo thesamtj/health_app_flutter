@@ -14,6 +14,7 @@ class ResultsPage extends StatelessWidget {
           Expanded(
             child: Container(
               padding: EdgeInsets.all(15.0),
+              alignment: Alignment.bottomLeft,
             ),
           ),
         ],
