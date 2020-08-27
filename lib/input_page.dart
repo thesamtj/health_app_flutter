@@ -202,9 +202,17 @@ class _InputPageState extends State<InputPage> {
             ],
           )),
           BottomButton(
-            buttonTitle: 'RE-CALCULATE',
+            buttonTitle: 'CALCULATE',
             onTap: () {
-              Navigator.pop(context);
+//              CalculatorBrain calc =
+//              CalculatorBrain(height: height, weight: weight);
+
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ResultsPage(),
+                ),
+              );
             },
           ),
         ],
