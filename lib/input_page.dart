@@ -201,7 +201,12 @@ class _InputPageState extends State<InputPage> {
               ),
             ],
           )),
-          BottomButton(),
+          BottomButton(
+            buttonTitle: 'RE-CALCULATE',
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
         ],
       ),
     );
